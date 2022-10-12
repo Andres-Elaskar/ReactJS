@@ -11,16 +11,16 @@ export default function Header() {
         <nav>
           <ul>
             <li>
-              <a href="">Inicio</a>
+              <a href="#">Inicio</a>
             </li>
             <li>
-              <a href="">Cositas</a>
+              <a href="#">Cositas</a>
             </li>
             <li>
-              <a href="">Contacto</a>
+              <a href="#">Contacto</a>
             </li>
             <li className="cart">
-              <a href="">
+              <a href="#">
                 <CartWidget />
               </a>
             </li>

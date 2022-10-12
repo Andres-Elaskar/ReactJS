@@ -1,3 +1,10 @@
-export default function ItemListContainer({ greeting }) {
-    return <h1>{greeting}</h1>;
-    }
+import ItemList from "../ItemList/ItemList";
+import "./itemListContainer.css";
+
+export default function ItemlistContainer() {
+    return (
+    <div className="containerListContainer">
+    <ItemList />
+    </div>
+    );
+}
