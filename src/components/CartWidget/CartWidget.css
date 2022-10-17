@@ -1,27 +1,20 @@
-.container-widget {
-    width: 80%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
-
-.widget {
-    width: 100%;
-}
-
-.widget img {
+.imgCard {
     width: 40px;
     height: 40px;
 }
 
-.counter {
-    width: 100%;
-
+.carritoStyle {
+    display: flex;
+    justify-content: space-between;
+    font-size: 25px;
+    margin-right: 8px;
+    margin-left: 8px;
+    border-color: black;
+    border-style: solid;
+    background-color: #F0F0F0;
 }
 
-.counter p {
-    position: absolute;
-    right: 67px;
-    top: 26px;
+.marginCarrito {
+    margin-right: 8px;
+    margin-left: 8px;
 }
