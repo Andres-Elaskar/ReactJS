@@ -1,71 +1,111 @@
-# Getting Started with Create React App
+Proyecto de E-Commerce con [REACTJS] - [CODERHOUSE].
+ Frutas Secas y Desecadas es un proyecto de tienda online con carrito de compras, creado con React DOM (utilizando componentes de [React]) y [Firebase] como servidor en la nube. El objetivo de esta tienda es que el consumidor pueda realizar compras de productos en la tienda y crear su orden correspondiente de pedido.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+¿Cómo se inicializa la app?
+Podés descargar la carpeta del proyecto o bien, clonarla desde la terminal. Para realizar la clonacion del proyecto, ejecutar en la consola: git clone https://github.com/Andres-Elaskar/Entrega-Final-ReactJs
+Instalar NPM usando el comando npm i en la ruta donde se encuentra "package.json" desde la terminal.
+La App se inicia a través de la terminal con el comando npm start, luego de haber instalado las dependencias del node-module correspondiente, que se especifican en el siguiente apartado.
+¿Qué tecnologías y dependencias usé para realizar la app?
+Tecnologías
+HTML CSS JAVASCRIPT FIREBASE REACTJS GIT
 
-## Available Scripts
+Dependencias
+🔹 "@emotion/react": "^11.10.5",
 
-In the project directory, you can run:
+🔹 "@emotion/styled": "^11.10.5",
 
-### `npm start`
+🔹 "@testing-library/jest-dom": "^5.16.5",
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+🔹 "@testing-library/react": "^13.4.0",
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+🔹 "@testing-library/user-event": "^13.5.0",
 
-### `npm test`
+🔹 "@uiball/loaders": "^1.2.6",
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+🔹 "animate.css": "^4.1.1",
 
-### `npm run build`
+🔹 "babel-plugin-macros": "^3.1.0",
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+🔹 "bootstrap": "^5.2.1",
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+🔹 "firebase": "^9.12.1",
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+🔹 "react": "^18.2.0",
 
-### `npm run eject`
+🔹 "react-bootstrap": "^2.5.0",
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+🔹 "react-dom": "^18.2.0",
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+🔹 "react-hook-form": "^7.39.1",
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+🔹 "react-router-dom": "^6.4.2",
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+🔹 "react-scripts": "5.0.1",
 
-## Learn More
+🔹 "react-toastify": "^9.1.1",
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+🔹 "sweetalert2": "^11.6.5",
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+🔹 "sweetalert2-react-content": "^5.0.7",
 
-### Code Splitting
+🔹 "web-vitals": "^2.1.4"
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Utilización de Firebase
+Para conectar tu proyecto con firestore, completá tus datos siguiendo el ejemplo de variables de entorno respetando los datos de la colección de productos.
 
-### Analyzing the Bundle Size
+-REACT_APP_apiKey=
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+-REACT_APP_authDomain=
 
-### Making a Progressive Web App
+-REACT_APP_projectId=
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+-REACT_APP_storageBucket=
 
-### Advanced Configuration
+-REACT_APP_messagingSenderId=
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+-REACT_APP_appId=
 
-### Deployment
+Componentes utilizados
+🔹 NavBar
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Contiene el logo de la tienda, las categorías y el carrito con los productos agregados y el precio total.
 
-### `npm run build` fails to minify
+🔹 ItemListContainer
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-# ReactJS
+Contiene imagen presentanción, los productos y filtrado por categoría.
+
+🔹 ItemList
+
+Contiene el mapeado de los productos necesarios.
+
+🔹 ItemDetailContainer
+
+Contiene el detalle del producto seleccionado.
+
+🔹 ItemDetail
+
+Contiene un detalle mas especifico del producto seleccionado como el nombre, la descripción, el stock, la categoría, permite seleccionar la cantidad del producto para comprar mediante ItemCount, agregarlo al carrito y finalizar la compra.
+
+🔹 Item
+
+Contiene la visualización del producto con sus detalles y un botón de "Ver Detalle" que redirige a ItemDetail.
+
+🔹 Cart
+
+Contiene el resumen de la compra.
+
+🔹 CartWidget
+
+Visualiza la cantidad de productos en el carrito y el precio total.
+
+🔹 Form
+
+Contiene un formulario con nombre y apellido, dirección, numero de teléfono y doble correo electrónico con la finalidad de verificar si coinciden.
+
+🔹 ItemCart
+
+Contiene un detalle de los productos seleccionados en el carrito por separado mas una botón por cada uno para poder eliminarlos.
+
+🔹 ItemCount
+
+Permite seleccionar la cantidad del producto.# Entrega-Final-ReactJS
